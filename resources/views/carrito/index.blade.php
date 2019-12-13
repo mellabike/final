@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-11 offset-md-1">
-        <h2 class="text-center">Mi carrito <i class="fa fa-shopping-cart" aria-hidden="true"></i></h2><br>
+        <h2 class="text-center">Mis Favoritos<i class="fa fa-shopping-cart" aria-hidden="true"></i></h2><br>
         @if ($carrito->isEmpty())
           <div class="alert alert-warning">
             No tienes productos agregados a tus favoritos<i class="fa fa-frown-o" aria-hidden="true"></i>
