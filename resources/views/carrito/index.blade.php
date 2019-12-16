@@ -14,8 +14,8 @@
           <thead>
             <tr>
               <th>Nombre</th>
-              <th>Contacto</th>
               <th>Precio</th>
+              <th>Contacto</th>
               <th>Eliminar</th>
             </tr>
           </thead>
@@ -23,8 +23,8 @@
             <tbody>
               <tr>
                 <td>{{ $data->nombre }}</td>
-                <td>{{ $data->correo }}</td>
                 <td>{{ $data->precio }}</td>
+                <td>{{ $data->correo }}</td>
                 <td>
                   <form class="" action="{{ route('cart.delete', ['id' => $data->id]) }}" method="post">
                     {{ csrf_field() }}
