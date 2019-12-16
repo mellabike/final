@@ -14,7 +14,7 @@
           <thead>
             <tr>
               <th>Nombre</th>
-              <th>Código</th>
+              <th>Contacto</th>
               <th>Precio</th>
               <th>Eliminar</th>
             </tr>
@@ -23,7 +23,7 @@
             <tbody>
               <tr>
                 <td>{{ $data->nombre }}</td>
-                <td>{{ $data->codigo }}</td>
+                <td>{{ $data->correo }}</td>
                 <td>{{ $data->precio }}</td>
                 <td>
                   <form class="" action="{{ route('cart.delete', ['id' => $data->id]) }}" method="post">

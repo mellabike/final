@@ -52,7 +52,7 @@ class MiprodController extends Controller
   }
 
   public function showProductos($search = null){
-    //aqui los pueden ordenar de manera que quieran, pero lo que hace en este caso es sacar todos los
+    //aqui se pueden ordenar de manera que quieran, pero lo que hace en este caso es sacar todos los
     //productos de la bd para mostrarlos
     if (!empty($search)) {
       $productos = Miprod::where('nombre','LIKE', '%'.$search.'%')
